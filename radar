@@ -1,3 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as pl
+from scipy.stats import binom
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all" ## Ref [] to display all called variables in a cell
+from matplotlib.patches import Circle, RegularPolygon
+from matplotlib.path import Path
+from matplotlib.projections.polar import PolarAxes
+from matplotlib.projections import register_projection
+from matplotlib.spines import Spine
+from matplotlib.transforms import Affine2D
+
 def radar_factory(num_vars, frame='circle'):
     """Create a radar chart with `num_vars` axes.
 
